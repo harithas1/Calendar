@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "grey Qo";
+    font-family: "Quicksand";
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(245, 245, 220, 0.455), #95c414c9) ;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.calendar{
+    width: 45rem;
+    height: 52rem;
+    background-color: #901fd2;
+    box-shadow: 0.5rem 1rem rgba(106, 98, 98, 0.27);
+    border-radius: 10px;
+}
+
+.month {
+    width: 100%;
+    height: 12rem;
+    background-color: #12bdd3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 2px 3px 4px rgba(1, 13, 15, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.month h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.month p {
+    font-size: 1.6rem;
+}
+
+.weekdays{
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;   
+}
+
+.weekdays div{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(91, 160, 220, 0.5);
+    color: black;
+}
+
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+
+}
+
+.days div{
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.2rem/7);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow:  0.3rem 0.3rem 0.5rem rgba(0,0,0,0.5);
+    transition: background-color 0.2s;
+    
+}
+
+.days div:hover:not(.today){
+    background-color: #0e9bbe6a;
+    border: 1px solid #3c3b3b;
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date{
+    opacity: 0.5;
+}
+
+
+.today {
+    background-color:  #12bdd3;
+    /* border-radius: 70% */
+}
